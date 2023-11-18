@@ -6,12 +6,13 @@ type StyledBtnPropsType = {
     fontSize?: string,
     primary?: boolean,
     outlined?: boolean,
+    active?:boolean,
 }
 
 export const StyledBtn = styled.button<StyledBtnPropsType>`
   //border: none;
   //background-color: fuchsia;
-    //background-color: ${props => props.color || "fuchsia"};
+  //background-color: ${props => props.color || "fuchsia"};
   border-radius: 10px;
   padding: 10px 20px;
   //color: snow;
@@ -19,7 +20,6 @@ export const StyledBtn = styled.button<StyledBtnPropsType>`
   font-size: ${props => props.fontSize || "2rem"};
   font-weight: bold;
 
-  
 
   /* &:last-child {
      background-color: #5a689d;
@@ -29,14 +29,14 @@ export const StyledBtn = styled.button<StyledBtnPropsType>`
     border: 2px solid ${props => props.color || "fuchsia"};
     color: ${props => props.color || "fuchsia"};
     background-color: transparent;
-    
+
     &:hover {
       border-color: green;
       color: midnightblue;
       background-color: transparent;
     }
   `}
-  
+
   ${props => props.primary && css<StyledBtnPropsType>`
     background-color: ${props => props.color || "fuchsia"};
     color: snow;
@@ -46,11 +46,10 @@ export const StyledBtn = styled.button<StyledBtnPropsType>`
     }
   `}
 
-
-  //primary
-
-
-
+  ${props => props.active && css<StyledBtnPropsType>`
+    box-shadow: 5px 5px 5px 5px rgba(105, 154, 150, 0.94);
+  `}
+  
 
 `
 

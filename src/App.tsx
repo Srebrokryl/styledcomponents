@@ -16,7 +16,7 @@ function App() {
                <StyledBtn color={"brown"} fontSize={"30px"}>Hello</StyledBtn>*/}
 
                <StyledBtn primary>Hello</StyledBtn>
-               <StyledBtn outlined>Hello</StyledBtn>
+               <StyledBtn outlined active>Hello</StyledBtn>
            </Box>
         </div>
     );
