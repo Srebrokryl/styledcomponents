@@ -30,11 +30,7 @@ export default App;
 
 
 
-const SuperBtn = styled(StyledBtn) `
-  border-radius: 5px;
-  background-color: gold;
-  color:black;
-`
+
 
 const Box = styled.div `
   display: flex;
