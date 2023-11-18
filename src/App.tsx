@@ -1,9 +1,10 @@
 import React from 'react';
 import './App.css';
 import styled from "styled-components";
-import { StyledBtn, SuperBtn } from './components/Button.styled';
+import { StyledBtn,} from './components/Button.styled';
 import { Link } from './components/Link.styled';
 import {Menu} from "./components/Menu.styled";
+import { myTheme } from './styles/Theme.styled';
 
 
 
@@ -15,8 +16,8 @@ function App() {
                <StyledBtn color={"green"} fontSize={"20px"}>Hello</StyledBtn>
                <StyledBtn color={"brown"} fontSize={"30px"}>Hello</StyledBtn>*/}
 
-               <StyledBtn primary>Hello</StyledBtn>
-               <StyledBtn outlined active>Hello</StyledBtn>
+               <StyledBtn color={myTheme.colors.primary} primary>Hello</StyledBtn>
+               <StyledBtn color={myTheme.colors.secondary} outlined active>Hello</StyledBtn>
            </Box>
         </div>
     );
@@ -45,7 +46,7 @@ const Box = styled.div `
   
 
 
-@media screen and (max-width: 800px){
+@media ${myTheme.media.tablet} {
   flex-direction: column;
 }
 `
