@@ -1,4 +1,6 @@
-const StyledBtn = styled.button`
+import styled from "styled-components";
+
+export const StyledBtn = styled.button`
   border: none;
   background-color: fuchsia;
   padding: 10px 20px;
