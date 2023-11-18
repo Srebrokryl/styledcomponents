@@ -5,7 +5,9 @@ import styled from "styled-components";
 function App() {
     return (
         <div className="App">
-            <StyledBtn>Hello</StyledBtn>
+            <Box>
+                <StyledBtn>Hello</StyledBtn>
+            </Box>
         </div>
     );
 }
@@ -21,4 +23,11 @@ const StyledBtn = styled.button`
   color: snow;
   font-size: 2rem;
   font-weight: bold;
+`
+
+const Box = styled.div`
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
 `
