@@ -17,7 +17,7 @@ export const StyledBtn = styled.button`
   }
 `
 
-const SuperBtn = styled(StyledBtn) `
+export const SuperBtn = styled(StyledBtn) `
   border-radius: 5px;
   background-color: gold;
   color:black;

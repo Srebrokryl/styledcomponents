@@ -1,8 +1,9 @@
 import React from 'react';
 import './App.css';
 import styled from "styled-components";
-import { StyledBtn } from './components/Button.styled';
+import { StyledBtn, SuperBtn } from './components/Button.styled';
 import { Link } from './components/Link.styled';
+import {Menu} from "./components/Menu.styled";
 
 
 
@@ -48,17 +49,3 @@ const Box = styled.div `
 }
 `
 
-const Menu = styled.nav`
-    ul{
-      list-style: none;
-      padding: 0;
-      display: flex;
-      
-      li > a {
-        color:green;
-      }
-      li + li{
-        margin-left:20px;
-      }
-    }
-`
