@@ -10,19 +10,14 @@ import {Menu} from "./components/Menu.styled";
 function App() {
     return (
         <div className="App">
-            <Menu>
-                <ul>
-                    <li><a href={"https://www.npmjs.com/package/%40types/styled-components"}>1</a></li>
-                    <li><a href={"https://www.npmjs.com/package/%40types/styled-components"}>2</a></li>
-                    <li><a href={"https://www.npmjs.com/package/%40types/styled-components"}>3</a></li>
-                </ul>
-            </Menu>
-            <Box>
-                <StyledBtn as={Link} href={"https://www.npmjs.com/package/%40types/styled-components"} >LinkComponent</StyledBtn>
-                <StyledBtn as="a" href={"https://styled-components.com/docs/basics#installation"} >Link</StyledBtn>
-                <StyledBtn>Hello</StyledBtn>
-                <SuperBtn>SuperButton</SuperBtn>
-            </Box>
+           <Box>
+               {/*<StyledBtn>Hello</StyledBtn>
+               <StyledBtn color={"green"} fontSize={"20px"}>Hello</StyledBtn>
+               <StyledBtn color={"brown"} fontSize={"30px"}>Hello</StyledBtn>*/}
+
+               <StyledBtn primary>Hello</StyledBtn>
+               <StyledBtn outlined>Hello</StyledBtn>
+           </Box>
         </div>
     );
 }
