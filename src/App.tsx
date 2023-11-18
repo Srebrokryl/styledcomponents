@@ -7,9 +7,9 @@ function App() {
         <div className="App">
             <Menu>
                 <ul>
-                    <li><a href={""}>1</a></li>
-                    <li><a href={""}>2</a></li>
-                    <li><a href={""}>3</a></li>
+                    <li><a href={"https://www.npmjs.com/package/%40types/styled-components"}>1</a></li>
+                    <li><a href={"https://www.npmjs.com/package/%40types/styled-components"}>2</a></li>
+                    <li><a href={"https://www.npmjs.com/package/%40types/styled-components"}>3</a></li>
                 </ul>
             </Menu>
             <Box>
@@ -25,22 +25,7 @@ function App() {
 export default App;
 
 
-const StyledBtn = styled.button`
-  border: none;
-  background-color: fuchsia;
-  padding: 10px 20px;
-  color: snow;
-  font-size: 2rem;
-  font-weight: bold;
 
-  &:hover {
-    background-color: rgb(52, 65, 112);
-  }
-  
-  &:last-child{
-    background-color: #25ff9c;
-  }
-`
 
 const Link = styled.a`
   color:#111111;
@@ -80,6 +65,9 @@ const Menu = styled.nav`
       
       li > a {
         color:green;
+      }
+      li + li{
+        margin-left:20px;
       }
     }
 `
