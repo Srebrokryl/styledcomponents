@@ -38,14 +38,20 @@ const Box = styled.div `
   height: 100vh;
   justify-content: center;
   align-items: center;
-  gap:30px;
-  
-  button{
-    cursor:pointer;
+  gap: 30px;
+
+  button {
+    cursor: pointer;
+  }
+
+  ${Link} {
+    cursor: zoom-in;
   }
   
-  ${Link}{
-  cursor:zoom-in;
+
+
+@media screen and (max-width: 800px){
+  flex-direction: column;
 }
 `
 
